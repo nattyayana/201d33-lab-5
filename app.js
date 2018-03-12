@@ -66,7 +66,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
   // var sum3NumString =( a + ' and ' + b + ' and' + c + 'sum to 16' );
-  // //console.log(sum3Numbers);
+
   // var prod3StringNum =('The product of ' + a + ' and ' + 7 + ' and ' + 5 + ' is 140 ');
 
   var sum3NumString =( a + ' and ' + b + ' and ' + c + ' sum to 16.' );
