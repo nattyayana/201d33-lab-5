@@ -65,12 +65,15 @@ Test this function by hand in the console to get it working, and when you think 
 //
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
-  var sum3NumString =( a + ' and ' + b + ' and' + c + 'sum to 16' );
-  //console.log(sum3Numbers);
-  var prod3StringNum =('The product of ' + a + ' and ' + 7 + ' and ' + 5 + ' is 140 ');
+  // var sum3NumString =( a + ' and ' + b + ' and' + c + 'sum to 16' );
 
+  // var prod3StringNum =('The product of ' + a + ' and ' + 7 + ' and ' + 5 + ' is 140 ');
 
-//var sumAndMultiply = (4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.';
+  var sum3NumString =( a + ' and ' + b + ' and ' + c + ' sum to 16.' );
+
+  var prod3StringNum =('The product of ' + a + ' and ' + b + ' and ' + c + ' is 140.');
+
+  //var sumAndMultiply = (4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.';
 
   var sumAdd = sum(sum(a,b)[0],c)[0];
   //console.log('TEST__:', sum3Numbers);
