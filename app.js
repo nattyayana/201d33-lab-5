@@ -92,7 +92,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5); //eslint-disable-line 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -111,21 +111,20 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(testArray) { //eslint-disable-line
 
+  var runningTotal = 0; 
+  for (var i = 0; i < testArray.length; i++) {
 
-  var sumOfTwo= sum(testArray[0],testArray[1])[0];
-  console.log(sumArray);
+    runningTotal =sum(testArray[i],runningTotal)[0];
+  }
 
-  var sumofthree=sum(sumOfTwo,testArray[2]);[0];
-  console.log(sumofthree);
-
-  var stringExample= testArray + 'was passed in as an arry of numbers, and ' + sumofthree + 'is their sum. ';
-
-  return [sumofthree, stringExample];
+  var stringExample= testArray.toString() + ' was passed in as an array of numbers, and ' + runningTotal + ' is their sum.';
+  console.log(runningTotal, stringExample);
+  return [runningTotal, stringExample];
 }
 
 // // Here is the test for sumArray(); uncomment it to run it
 
-testSumArray(testArray);
+testSumArray(testArray); //eslint-disable-line 
 
 // Write your code here
 
@@ -159,6 +158,6 @@ function multiplyArray(testArray) { //eslint-disable-line
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
+testMultiplyArray(testArray);//eslint-disable-line 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
