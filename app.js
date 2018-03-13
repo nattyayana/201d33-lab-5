@@ -106,12 +106,28 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// Write your code here
+// // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(testArray) { //eslint-disable-line
 
+
+  var sumOfTwo= sum(testArray[0],testArray[1])[0];
+  console.log(sumArray);
+
+  var sumofthree=sum(sumOfTwo,testArray[2]);[0];
+  console.log(sumofthree);
+
+  var stringExample= testArray + 'was passed in as an arry of numbers, and ' + sumofthree + 'is their sum. ';
+
+  return [sumofthree, stringExample];
 }
+
+// // Here is the test for sumArray(); uncomment it to run it
+
+testSumArray(testArray);
+
+// Write your code here
 
 // Here is the test for sumArray(); uncomment it to run it
 
